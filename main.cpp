@@ -52,6 +52,7 @@ string getValidItem(string message)
     string input;
 
     while (true)
+
     {
         cout << message;
         getline(cin, input);
@@ -59,7 +60,7 @@ string getValidItem(string message)
         if (isValidItem(input))
             return input;
 
-        cout << "\nInvalid Item Name!";
+        cout << "\nInvalid Item Name";
         cout << "\nOnly letters, numbers and spaces allowed.\n\n";
     }
 }
